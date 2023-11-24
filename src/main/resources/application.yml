@@ -1,0 +1,23 @@
+spring:
+  datasource:
+    driverClassName: org.h2.Driver
+    url: jdbc:h2:mem:gunyong
+    username: sa
+    password:
+  mvc:
+    view:
+      prefix: /WEB-INF/view/
+      suffix: .jsp
+
+  h2:
+    console:
+      enabled: true
+  hibernate:
+    dialect: org.hibernate.dialect.H2Dialect
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
